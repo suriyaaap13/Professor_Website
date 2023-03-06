@@ -1,0 +1,42 @@
+main{
+    width:100%;
+    margin:50px auto;
+    display: grid;
+    grid-gap:2px;
+    grid-template-rows: 38px repeat(1,1fr);
+    grid-template-columns: 500px repeat(3,1fr);
+}
+.div1{
+    grid-row:1/-1;
+    grid-column: 1/2;
+    margin: 150px 220px 20px 20px;
+
+}
+.div5{
+    grid-row:2/-1;
+    grid-column: 2/-1;
+
+}
+.div2{
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.div3{
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.div4{
+    text-align: center;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
