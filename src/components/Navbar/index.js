@@ -1,7 +1,8 @@
 import Logo from '../../images/NavBarLogo.png';
+import Link from '../Link';
 import './index.css';
 
-export default function index() {
+export default function Navbar() {
 
 
   
@@ -14,6 +15,33 @@ export default function index() {
       navLinks.style.right="-200px";
   }
 
+  const links = [
+    {
+      label: 'HOME',
+      path: '/'
+    },
+    {
+      label: 'RESEARCH',
+      path: '/research'
+    },
+    {
+      label: 'GROUP',
+      path: '/group'
+    },
+    {
+      label: 'BIOSKETCH',
+      path: '/bio'
+    },
+    {
+      label: 'GALLERY',
+      path: '/gallery'
+    }
+  ];
+
+  const renderedLinks = links.map((link)=>{
+    return <Link key={link.path} to={link.path}>{link.label}</Link>
+  });
+
 
   return (
     <nav>
@@ -23,11 +51,12 @@ export default function index() {
       <div className="nav-links" id="navLinks">
             <i className="fa fa-times" onClick={hideMenu}></i>
             <ul>
-                <li><a href="index.html">HOME</a></li>
+                {/* <li><a href="index.html">HOME</a></li>
                 <li><a href="publication.html">RESEARCH</a></li>
                 <li><a href="group.html">GROUP</a></li>
                 <li><a href="profile.html">BIOSKETCH</a></li>
-                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="gallery.html">GALLERY</a></li> */}
+                {renderedLinks}
             </ul>
         </div>
       <i className="fa fa-bars" onClick={showMenu}></i>
