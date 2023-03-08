@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
-import NavigationContext from '../context/navigation';
+import React from 'react';
+import useNavigation from '../hooks/use-navigation';
 
 export default function Route({children, path}) {
 
-    const { currentPath } = useContext(NavigationContext);
+    const { currentPath } = useNavigation();
 
   return (
     <>

@@ -10,9 +10,6 @@ import Group from './pages/Group';
 
 export default function App() {
 
-  
-
-
   return (
     <NavigationProvider>
       <Navbar/>

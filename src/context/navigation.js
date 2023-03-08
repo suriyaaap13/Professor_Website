@@ -21,9 +21,14 @@ function NavigationProvider({ children }) {
         window.history.pushState({}, '', to);
         setCurrentPath(to);
     }
+    
 
-    return <NavigationContext.Provider value = {{currentPath, navigate}} >
-        {children}
+
+    return <NavigationContext.Provider  value = {{currentPath, navigate}} >
+        {currentPath === '/' &&<section className='header'>
+            {children}
+        </section>}
+        {currentPath !== '/' && <>{children}</>}
     </NavigationContext.Provider>
 
 }
