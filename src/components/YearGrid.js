@@ -8,14 +8,12 @@ export default function YearGrid({value, onSelect}) {
     }
 
     const renderedItems = arr.map((element)=>{
-
         let finalClassName;
         if(element === value){
-            finalClassName = 'p-2 bg-white';
+            finalClassName = 'p-2 bg-white rounded-full';
         }else{
-            finalClassName = 'p-2 bg-gray-400';
+            finalClassName = 'p-2 rounded-full bg-gray-400';
         }
-
         return <div key={element} className={finalClassName} id={`year-${element}`} onClick = {()=>onSelect(element)}>{element}</div>
     })
 
