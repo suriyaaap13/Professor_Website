@@ -1,5 +1,5 @@
 import React, { useState }  from 'react';
-
+import axios from 'axios';
 
 
 export default function Register() {
@@ -11,8 +11,11 @@ export default function Register() {
     const handleSubmit = (event)=>{
         event.preventDefault();
         if(password !== confirmPassword){
-            alert('Password and Confirm Password doesnot Match')
+            alert('Password and Confirm Password doesnot Match');
+            return;
         }
+        const result = axios.post('http://localhost:3001/login', {email, password});
+        alert(result.data);
         setConfirmPassword('');
         setEmail('');
         setConfirmPassword('');
