@@ -7,11 +7,15 @@ import Biosketch from './pages/Biosketch';
 import Gallery from './pages/Gallery';
 import Research from './pages/Research';
 import Group from './pages/Group';
+import Login from './pages/Login';
 
 export default function App() {
 
+  const currentPath = window.location.pathname;
+  
+
   return (
-    <NavigationProvider>
+    ( currentPath === '/admin/login' ? <Login/> : <NavigationProvider>
       <Navbar/>
       <div>
         <Route path='/'>
@@ -30,6 +34,6 @@ export default function App() {
           <Gallery/>
         </Route>
       </div>
-    </NavigationProvider>
+    </NavigationProvider> )
   )
 }

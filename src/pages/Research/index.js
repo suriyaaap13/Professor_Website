@@ -10,9 +10,7 @@ export default function Research() {
 
 
   const handleYearChange = (value)=>{
-    console.log("Hello World", value);
     setYear(value);
-    console.log("Hello World", value);
   }
 
 
@@ -28,8 +26,6 @@ export default function Research() {
       overview: require('../../images/Manik adv syn catal.jpg'),
       collaborator: "Maniklal Shee and N. D. Pradeep Singh",
       link: "https://doi.org/10.1002/adsc.202200242",
-      width: "500",
-      height: "190",
     },
     {
       paperNo: 127,
@@ -37,8 +33,6 @@ export default function Research() {
       overview: require('../../images/Souvik 1.jpeg'),
       collaborator: "Souvik Ray, Saptarshi Banerjee, Amit Kumar Singh, Mamata Ojha, Arindam Mondal and N. D. Pradeep Singh",
       link: "https://doi.org/10.1021/acsanm.2c01515",
-      width: "550",
-      height: "210",
     },
     {
       paperNo: 126,
@@ -46,8 +40,6 @@ export default function Research() {
       overview: require('../../images/chem soc rev.jpg'),
       collaborator: "Maniklal Shee and N. D. Pradeep Singh",
       link: "https://doi.org/10.1039/D1CS00494H",
-      width: "450",
-      height: "350",
     }
   ])
 
@@ -62,7 +54,7 @@ export default function Research() {
     },
     {
       label: 'Overview',
-      render: (element)=><img src={element.overview} alt={element.title} height = {element.height} width = {element.width}/>
+      render: (element)=><img src={element.overview} alt={element.title} height = "350" width = "450"/>
     },
     {
       label: 'Collaborator',
