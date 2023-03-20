@@ -14,7 +14,7 @@ export default function Home() {
     <div className="text-box">
         <h1 className="singhgrounp"> The Singh's Group</h1>
         <p>Our research group works at the interface of chemistry, biology and material sciences with light as an important tool. We are interested in designing new fluorescent Photoremovable Protecting groups for controlled release of bioactive molecules.</p>
-        <a href="/research" onClick={()=>handleClick('/research')} className="hero-btn">View Our publications</a>
+        <a href="/publication" onClick={()=>handleClick('/publication')} className="hero-btn">View Our publications</a>
     </div>
   )
 }

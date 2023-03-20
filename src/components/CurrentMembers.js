@@ -96,7 +96,7 @@ const render = (row)=>{
             </ul>
         </div>
         <h2>{element.name}</h2>
-        <h3>{element.label}</h3>
+        <div className='mt-4 '>{element.label}</div>
     </div>
     );
   })

@@ -21,6 +21,10 @@ export default function Navbar() {
       path: '/'
     },
     {
+      label: 'PUBLICATION',
+      path: '/publication'
+    },
+    {
       label: 'RESEARCH',
       path: '/research'
     },

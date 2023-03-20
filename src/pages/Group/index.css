@@ -27,17 +27,13 @@ h1:after{
 .profile .img-box {
     opacity: 1;
     float: left;
+    margin-bottom: 13px;
     display: block;
     position: relative;
 }
 .profile h2{
     font-size: 22px;
     font-weight: bold;
-}
-.profile h3{
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 15px;
 }
 .img-box:after {
     content:'';
